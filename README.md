@@ -52,24 +52,24 @@ I’m tackling the Department of Business Affairs and Consumer Protection’s ne
 
 
 - **Classification Report**:  
-- **AAC** (cancelled): Precision = 0.958, Recall = 0.784, F1 = 0.862 (n=5 862)  
-- **AAI** (active):   Precision = 0.893, Recall = 0.983, F1 = 0.936 (n=10 976)  
-- **Overall Accuracy** = 0.911  
+   - **AAC** (cancelled): Precision = 0.958, Recall = 0.784, F1 = 0.862 (n=5 862)  
+   - **AAI** (active):   Precision = 0.893, Recall = 0.983, F1 = 0.936 (n=10 976)  
+   - **Overall Accuracy** = 0.911  
 
 - **ROC Curve & AUC**:  
-- AUC = 0.9575 (computed via `roc_auc_score`)
+   - AUC = 0.9575 (computed via `roc_auc_score`)
 
 - **Precision–Recall & Average Precision**:  
-- AP = 0.956 (baseline prevalence ≈ 0.65)
+   - AP = 0.956 (baseline prevalence ≈ 0.65)
 
 - **Log Loss**:  
-- Log Loss = 0.2050 (vs. null model ≈ 0.65)
+   - Log Loss = 0.2050 (vs. null model ≈ 0.65)
 
 - **Learning Curves**:  
-- Training vs. validation loss converged by ~20 epochs with a gap < 0.02, indicating minimal overfitting
+   - Training vs. validation loss converged by ~20 epochs with a gap < 0.02, indicating minimal overfitting
 
 - **Artifacts Saved**:  
-- Confusion matrix, ROC, PR curves, and learning-curve plots in `figures/conf.png`
+   - Confusion matrix, ROC, PR curves, and learning-curve plots in `figures/conf.png`
 
 
 ---
