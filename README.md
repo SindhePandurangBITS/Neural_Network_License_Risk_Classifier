@@ -45,6 +45,10 @@ I’m tackling the Department of Business Affairs and Consumer Protection’s ne
 | **Actual AAC** |          4 597 |          1 265 |
 | **Actual AAI** |            182 |         10 794 |
 
+![C-Matrix](plots/conf.png)
+![C-Matrix](plots/RoC.png)
+![C-Matrix](plots/eval.png)
+
 
 - **Classification Report**:  
 - **AAC** (cancelled): Precision = 0.958, Recall = 0.784, F1 = 0.862 (n=5 862)  
