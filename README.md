@@ -46,8 +46,10 @@ I’m tackling the Department of Business Affairs and Consumer Protection’s ne
 | **Actual AAI** |            182 |         10 794 |
 
 ![C-Matrix](plots/conf.png)
-![C-Matrix](plots/RoC.png)
-![C-Matrix](plots/eval.png)
+![AUC-ROC](plots/RoC.png)
+![precision vs recall](plots/P_R.png)
+![Eval](plots/eval.png)
+![Tuning](plots/HP_Tuning.png)
 
 
 - **Classification Report**:  
