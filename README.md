@@ -77,31 +77,31 @@ I’m tackling the Department of Business Affairs and Consumer Protection’s ne
 ## 🚀 Project Pipeline
 
 1. **Business Understanding**  
-   Define license-risk objectives, stakeholder needs, and success metrics (Accuracy ≥ 95 %, Recall_AAC ≥ 90 %, Precision_AAC ≥ 50 %, AUC ≥ 0.90).
+   Define license risk objectives, stakeholder needs, and success metrics (Accuracy ≥ 95 %, Recall_AAC ≥ 90 %, Precision_AAC ≥ 50 %, AUC ≥ 0.90).
 
 2. **Data Wrangling**  
-   Ingest raw Chicago business-license data; schema validation; unify ISSUE, RENEW, C_LOC, C_CAPA, C_EXPA records.
+   Ingest raw Chicago business license data, schema validation, unify ISSUE, RENEW, C_LOC, C_CAPA, C_EXPA records.
 
 3. **Exploratory Data Analysis**  
-   Univariate/multivariate distributions; missingness maps; temporal trend analysis of status-change events.
+   Univariate/multivariate distributions, missingness maps, temporal trend analysis of status change events.
 
 4. **Preprocessing**  
-   Outlier capping, missing-value imputation, date encoding (cyclic sin/cos), binary mapping of categorical flags.
+   Outlier capping, missing value imputation, date encoding (cyclic sin/cos), binary mapping of categorical flags.
 
 5. **Feature Engineering**  
-   Ordinal/frequency encoding; derive time-since-last-renewal; create seasonality indicators from issue/expiry dates.
+   Ordinal/frequency encoding, derive time-since-last-renewal, create seasonality indicators from issue/expiry dates.
 
 6. **Feature Selection**  
    VarianceThreshold, correlation clustering (dist=1–|corr|), pruning of collinear blocks, PCA (95 % variance) for residual redundancy.
 
 7. **Model Architecture Design**  
-   MLP with two hidden layers (128, 64), ReLU activations, dropout; output sigmoid for binary AAC classification (or softmax for multiclass).
+   MLP with two hidden layers (128, 64), ReLU activations, dropout, output sigmoid for binary AAC classification (or softmax for multiclass).
 
 8. **Model Training**  
-   Stratified train/val split; Adam optimizer with learning-rate schedules; class weights to rebalance AAC vs. non-AAC.
+   Stratified train/val split, Adam optimizer with learning-rate schedules, class weights to rebalance AAC vs. non-AAC.
 
 9. **Model Evaluation**  
-   Compute Accuracy, Recall, Precision, ROC AUC on hold-out set; analyze confusion matrix and calibration curves.
+   Compute Accuracy, Recall, Precision, ROC AUC on hold-out set, analyze confusion matrix and calibration curves.
 
 10. **Hyperparameter Tuning**  
     Grid/random search over layer sizes, dropout rates, learning rates, batch sizes; select best via cross-validated AUC.
