@@ -112,22 +112,22 @@ I’m tackling the Department of Business Affairs and Consumer Protection’s ne
 ## 🔧 Installation & Quick Start
 
 
-# 1. Clone repo
+**1. Clone repo**
 ```bash
 git clone https://github.com/SindhePandurangBITS/Neural_Network_MLP.git
 cd Neural_Network_MLP
 ```
-# 2. Create & activate venv
+**2. Create & activate venv**
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-# 3. Install dependencies
+**3. Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
-# 4. Run full pipeline
+**4. Run full pipeline**
 ```bash
 # 1. Load & clean raw data
 python src/data_loader.py \
