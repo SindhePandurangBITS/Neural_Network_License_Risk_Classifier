@@ -45,10 +45,17 @@ I’m tackling the Department of Business Affairs and Consumer Protection’s ne
 | **Actual AAI** |            182 |         10 794 |
 
 ![C-Matrix](plots/conf.png)
-![AUC-ROC](plots/RoC.png)
-![precision vs recall](plots/P_R.png)
-![Eval](plots/eval.png)
-![Tuning](plots/HP_Tuning.png)
+
+<p float="left">
+  <img src="plots/RoC.png" width="45%" />
+  <img src="plots/P_R.png" width="45%" />
+</p>
+
+<p float="left">
+  <img src="plots/eval.png" width="45%" />
+  <img src="plots/HP_Tuning.png" width="45%" />
+</p>
+
 
 
 - **Classification Report**:  
