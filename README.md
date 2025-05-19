@@ -1,4 +1,4 @@
-# Neural Network - License Risk Classifier
+# Neural_Network_License_Risk_Classifier
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
