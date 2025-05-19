@@ -13,7 +13,8 @@ I’m tackling the Department of Business Affairs and Consumer Protection’s ne
 
 
 ---
-![MLP Architecture](MLP_neural.jpg)
+![MLP Architecture](./MLP_neural.jpg)
+
 ---
 
 
