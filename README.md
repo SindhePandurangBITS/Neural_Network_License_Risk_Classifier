@@ -8,7 +8,7 @@
 
 ## 🎯 Business Challenge
 
-I’m tackling the Department of Business Affairs and Consumer Protection’s need to flag high-risk Chicago business-license applications before they go live. By mining ISSUE, RENEW, C_LOC and status-change records (cancellations, revocations, appeals), LicenseGuard NN predicts AAC (cancelled) cases with ≥ 90 % recall and delivers interpretable risk scores for proactive review.
+I’m tackling the Department of Business Affairs and Consumer Protection’s need to flag high-risk Chicago business-license applications before they go live. By mining ISSUE, RENEW, C_LOC and status change records (cancellations, revocations, appeals), LicenseGuard NN predicts AAC (cancelled) cases with ≥ 90 % recall and delivers interpretable risk scores for proactive review.
 
 
 
@@ -26,7 +26,7 @@ I’m tackling the Department of Business Affairs and Consumer Protection’s ne
    MLP (128→64→1) with ReLU models application-type, temporal and engineered/PCA features beyond linear methods.
 
 - **Automated Feature Abstraction**  
-  Hidden layers fuse raw, variance‑filtered and cluster-pruned inputs into high-level risk representations.
+  Hidden layers fuse raw, variance filtered and cluster-pruned inputs into high level risk representations.
 
 - **Probabilistic Risk Scoring with Class Weights**  
   Sigmoid output optimized via weighted cross-entropy ensures ≥ 90 % AAC recall while controlling false positives.
