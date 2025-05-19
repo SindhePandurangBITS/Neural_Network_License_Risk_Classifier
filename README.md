@@ -8,7 +8,7 @@
 
 ## 🎯 Business Challenge
 
-I’m tackling the Department of Business Affairs and Consumer Protection’s need to flag high-risk Chicago business-license applications before they go live. By mining years of ISSUE, RENEW and change-of-status records—along with cancellation, revocation and appeal outcomes—I’m building a multiclass neural network that spots likely AAC (cancelled) cases with ≥ 90 % recall and interpretable risk scores. This empowers the Business Affairs Team to proactively review problem applications, slashing compliance costs and safeguarding the city’s regulatory integrity.
+I’m tackling the Department of Business Affairs and Consumer Protection’s need to flag high-risk Chicago business-license applications before they go live. By mining ISSUE, RENEW, C_LOC and status-change records (cancellations, revocations, appeals), LicenseGuard NN predicts AAC (cancelled) cases with ≥ 90 % recall and delivers interpretable risk scores for proactive review.
 
 
 
@@ -23,17 +23,16 @@ I’m tackling the Department of Business Affairs and Consumer Protection’s ne
 
 
 - **Capture Complex, Non-Linear Patterns**  
-  Our MLP (128→64→1) with ReLU activations models intricate interactions between application types (ISSUE, RENEW, C_LOC…), status-change timings, and engineered + PCA features—surpassing linear separability.
+   MLP (128→64→1) with ReLU models application-type, temporal and engineered/PCA features beyond linear methods.
 
 - **Automated Feature Abstraction**  
-  Hidden layers learn optimal feature combinations end-to-end, fusing raw, variance-filtered, and cluster-pruned inputs into high-level risk representations with minimal manual tuning.
+  Hidden layers fuse raw, variance‑filtered and cluster-pruned inputs into high-level risk representations.
 
 - **Probabilistic Risk Scoring with Class Weights**  
-  A sigmoid output trained via class-weighted cross-entropy ensures ≥ 90 % recall on AAC (cancelled) while controlling false positives, directly optimizing our key business metric.
+  Sigmoid output optimized via weighted cross-entropy ensures ≥ 90 % AAC recall while controlling false positives.
 
 - **Regularization & Generalization**  
-  Dropout between layers, early stopping, and adaptive learning-rate schedules combat overfitting on skewed license-status distributions—delivering stable predictions on new applications.
-
+  Dropout, early stopping and adaptive LR schedules prevent overfitting on skewed license-status distributions.
 
 ---
 ## ❓How Did i evaluated this neural network classifier ?
