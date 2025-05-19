@@ -1,0 +1,24 @@
+# Core 
+numpy==1.24.3
+pandas==1.5.3
+
+# Preprocessing 
+scikit-learn==1.2.2
+
+# Neural network modeling
+tensorflow==2.12.0
+
+# Hyperparameter tuning
+optuna==3.2.0
+
+# EDA
+matplotlib==3.7.1
+seaborn==0.12.2
+
+# Utilities
+PyYAML==6.0           
+joblib==1.2.0         
+tqdm==4.65.0          
+
+#advanced encoders
+category-encoders==2.6.0
