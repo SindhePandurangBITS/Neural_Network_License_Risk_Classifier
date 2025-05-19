@@ -1,4 +1,4 @@
-# architecture.py
+# src/architecture.py
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.initializers import GlorotUniform
